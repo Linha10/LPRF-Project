@@ -1,0 +1,385 @@
+.my_ticket_list_container {
+  max-width: 100%;
+  font-family: "Noto Sans";
+  font-size: 20px;
+
+  #member_container {
+    background-image: url("../../image/vs_morning.svg");
+    background-repeat: no-repeat;
+    background-position: 0 40px;
+    display: flex;
+    height: 800px;
+    // min-height: calc(100vh - 170px);
+    width: 100%;
+    
+
+    .con_both {
+      flex: 1;
+      // /* border: 1px solid black; */
+      padding: 20px;
+      &.con_right {
+        flex-grow: 5;
+        margin-left: 20px;
+
+      }
+      &.con_left {
+        flex-grow: 2;
+        padding-top: 70px;
+
+        // img {
+        //   width: 40%;
+        // }
+
+        .my_img {
+          width: 130px;
+          height: 130px;
+          // margin: 1%;
+          position: relative;
+          border-radius: 50%;
+          background-size: contain;
+          cursor: pointer;
+          :hover {
+            .wrap_img {
+              display: block;
+            }
+          }
+
+          // img {
+          //   float: left;
+          //   width: 100%;
+          //   height: 100%;
+          // }
+
+          .wrap_img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            display: none;
+          }
+
+          // &:before{
+          //     content: " ";
+          //     position: absolute;
+          //     z-index: 1;
+          //     background-color: rgba(128, 128, 128, 0.596);
+          //     width: 100%;
+          //     height:100%;
+          //     border-radius: 50%;
+
+          // }
+        }
+        /* 左導覽列start */
+        .member_hi {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+
+          span span {
+            font-size: 2em;
+          }
+        }
+        #member_list {
+          // background-color: #fff;
+          // width: 60%;
+          // text-align: center;
+          // margin: 30px auto;
+          background-color: #fff;
+          width: 60%;
+          text-align: center;
+          margin: 30px auto;
+          margin-top: 40px;
+          border: 1px solid lightgrey;
+
+          a {
+            text-decoration: none;
+            color: #000;
+          }
+          #member_list02 {
+            background-color: #81c268;
+            border-right: 3px solid #2b9635;
+          }
+
+          div {
+            margin: 0 auto;
+            width: 100%;
+            height: 75px;
+            line-height: 75px;
+
+            &:hover {
+              background-color: #81c268;
+              border-right: 3px solid #2b9635;
+              cursor: pointer;
+            }
+          }
+        }
+
+        #member_logout {
+          width: 60%;
+          margin: 70px auto;
+
+          div {
+            width: 35%;
+            padding: 5px;
+            float: left;
+            text-align: center;
+            background-color: #555151;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    /* 左導覽列end */
+
+    /* 現在位置start */
+    #now_location {
+      margin-top: 10%;
+      text-align: left;
+    }
+
+    #now_location span {
+      display: inline-block;
+      margin: 10px;
+    }
+
+    /* 現在位置end */
+
+    /* 訂單表格 start*/
+    .order_list {
+      // width: 90%;
+      width: 1000px;
+      // min-height: 370px;
+      max-height: 720px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.6);
+      margin-top: 80px;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      &::-webkit-scrollbar {
+        width: 10px;
+        background-color: #eee;
+      }
+      &::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background-color: #eee;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: #c7c7c7;
+        border-radius: 50px;
+        width: 10px;
+        // height: 150px;
+      }
+      &::-webkit-scrollbar-thumb:hover {
+        background-color: #eee;
+      }
+      .thead_area {
+        width: 100%;
+        height: 50px;
+        .tr_area {
+          width: 100%;
+          height: 50px;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          font-weight: 600;
+          background-color: #eee;
+          .th_area {
+            width: 253px;
+            &.order_time {
+              width: 180px;
+            }
+          }
+        }
+      }
+
+      .each_order {
+        width: 100%;
+        // border-top: 1px solid #333;
+        border-bottom: 1px solid #ccc; // height: 50px;
+        .tr_second_area {
+          width: 100%;
+          height: 50px;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          background-color: rgba(255, 255, 255, 0.7);
+          // &.odd_row {
+          //   background-color: rgba(255, 255, 255, 0.7);
+          // }
+          // &.even_row {
+          //   background-color: rgba(240, 240, 240, 0.5);
+          // }
+          .tb_area {
+            display: flex;
+            width: 153px;
+            display: flex;
+            justify-content: center;
+            &.order_time {
+              width: 180px;
+            }
+            .btn_position {
+              width: 93%;
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              .order_details_btn {
+                width: 20px;
+                height: 20px;
+                background-color: lightgrey;
+                text-align: center;
+                line-height: 20px;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+        .order_detail {
+          width: 100%;
+          // height: 0;
+          height: 0;
+          transform: scaleY(0);
+          opacity: 0;
+          transform-origin: top;
+          overflow: hidden;
+          background-color: #f7f7f7;
+          // display: none;
+          transition: 0.3s;
+          &.order_detail_show {
+            transform: scaleY(1);
+            opacity: 1;
+            height: unset;
+            // display: block;
+            // height: 160px;
+          }
+          .order_detail_content {
+            width: 100%;
+            .ticket_title_area {
+              display: flex;
+              width: 100%;
+              height: 30px;
+              align-items: center;
+              border-bottom: 0.5px solid #ccc;
+              .ticket_title {
+                width: 153px;
+                font-weight: 600;
+                font-size: 14px;
+                color: #666;
+                justify-content: center;
+                &.e_vocher {
+                  width: 465px;
+                }
+                &:first-child {
+                  width: 180px;
+                }
+              }
+            }
+            .each_ticket {
+              // height: 50px;
+              width: 100%;
+              .order_detail_area {
+                display: flex;
+                align-items: center;
+                // justify-content: space-evenly;
+                width: 100%;
+                height: 60px;
+                .type_color {
+                  display: flex;
+                  justify-content: flex-start;
+                  align-items: center;
+                  width: 180px;
+
+                  .blank {
+                    &.single_color {
+                      width: 10px;
+                      height: 30px;
+                      margin: 0px 20px;
+                      background-color: #ff8b2c;
+                    }
+                    &.two_days_color {
+                      width: 10px;
+                      height: 30px;
+                      margin: 0px 20px;
+                      background-color: #587ddb;
+                    }
+                    &.camp_color {
+                      width: 10px;
+                      height: 30px;
+                      margin: 0px 20px;
+                      background-color: #ffe036;
+                    }
+                  }
+                  .gray_square_details_one {
+                    // width: 153px;
+                    display: flex;
+                    justify-content: center;
+                  }
+                }
+
+                .gray_square_details {
+                  width: 153px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  white-space: pre-wrap;
+                  // &:first-child {
+                  //   width: 200px;
+                  // }
+                  &.e_vocher {
+                    // width: 465px;
+                  }
+                  .view_area {
+                    color: black;
+                    text-decoration: underline;
+                    cursor: pointer;
+                  }
+                  .camp_site {
+                    width: 30px;
+                    height: 16px;
+                    display: flex;
+                    // box-shadow: 0 0 2px 2px #ddd;
+                    border-radius: 8px;
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: #999;
+                    overflow: hidden;
+                    margin-left: 5px;
+                    .camp_site_name {
+                      width: 100%;
+                      height: 100%;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      transition: 0.3s;
+                      font-size: 12px;
+                      color: #666;
+                      background-color: #9ace86;
+                      font-family: "Open Sans";
+                    }
+                  }
+                }
+              }
+              .detail_line {
+                width: 100%;
+                height: 0.5px;
+                background-color: #ccc;
+                // margin: 0 20px;
+              }
+              
+            }
+          }
+        }
+      }
+    }
+  }
+ 
+}

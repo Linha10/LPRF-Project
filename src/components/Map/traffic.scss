@@ -1,0 +1,66 @@
+* {
+    font-family: "Noto Sans TC", sans-serif;
+}
+.outsideCon{
+    // ver2.0 >> all className tag in outsideCon tag
+
+    // height: 80vh;
+    // background-color: chartreuse;
+    margin-left: 10vh;
+    .myHeight {
+        // margin-top: -0.5vh;
+        width: 90%;
+        height: 60vh;
+        border-radius: 10px;
+        transition: 0.5s;
+        margin-left: 10vh;
+        left: 10.65vh;
+        top: 2vh;
+        position: relative;
+        &:hover{
+            margin-top: -0.5vh;
+        }
+        
+        
+    }
+    
+    
+    
+    .title {
+        position: relative;
+        width: 10%;
+        margin-left: -35vh;
+        // background-color: cadetblue;
+    }
+    .traffic {
+        margin-left: 1vh;
+        margin-top: -1vh;
+        width: 185px;
+        height: 70px;
+       
+    }
+    
+    .toEvent{
+        position: relative;
+        width: 60%;
+        margin-top: 20vh;
+        margin-left: 7vh;
+        transition: 0.1s ;
+        
+        // background-color: chartreuse;
+    }
+    
+    .toEvent:hover{
+        margin-top: 19.5vh;
+        border: 1px solid rgb(117, 117, 117);
+        border-radius: 10px;
+        color: black;
+        
+    }
+    
+    .popUp {
+        padding-bottom: 3vh;
+    }
+    
+}
+

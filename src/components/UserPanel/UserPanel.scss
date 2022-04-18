@@ -1,0 +1,51 @@
+.user_panel_container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin: 50px 0 0 0;
+  z-index: 100;
+  position: fixed;
+  right: 82px;
+  top: 34px;
+  &.component_show {
+    opacity: 1;
+    pointer-events: initial;
+    transition: 0.3s;
+  }
+  &.component_hide {
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+  }
+  .user_panel_inner {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    z-index: 110;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0 5px 5px -5px #333;
+
+    &.panel_show {
+      opacity: 1;
+      transition: 0.3s;
+    }
+    &.panel_hide {
+      opacity: 0;
+      transition: 0.3s;
+    }
+  }
+
+  .background {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    // background-color: rgba(0, 0, 0, 0.95);
+    z-index: 100;
+    cursor: initial;
+  }
+}

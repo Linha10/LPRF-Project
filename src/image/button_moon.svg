@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <filter id="椭圆_1" x="0" y="0" width="32" height="32" filterUnits="userSpaceOnUse">
+      <feOffset dy="-1" input="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood flood-opacity="0.161" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <filter id="减去_1" x="7.25" y="6.5" width="15.5" height="21" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="组_636" data-name="组 636" transform="translate(-1567 -40)">
+    <g data-type="innerShadowGroup">
+      <circle id="椭圆_1-2" data-name="椭圆 1" cx="16" cy="16" r="16" transform="translate(1567 40)" fill="#656565"/>
+      <g transform="matrix(1, 0, 0, 1, 1567, 40)" filter="url(#椭圆_1)">
+        <circle id="椭圆_1-3" data-name="椭圆 1" cx="16" cy="16" r="16" fill="#fff"/>
+      </g>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 1567, 40)" filter="url(#减去_1)">
+      <path id="减去_1-2" data-name="减去 1" d="M-5624.54,18a9.647,9.647,0,0,1-6.689-2.636A8.728,8.728,0,0,1-5634,9a8.726,8.726,0,0,1,2.771-6.364A9.647,9.647,0,0,1-5624.54,0a9.879,9.879,0,0,1,3.04.475A9.044,9.044,0,0,0-5627.919,9a9.045,9.045,0,0,0,6.419,8.526A9.875,9.875,0,0,1-5624.54,18Z" transform="translate(5642.75 7)" fill="#ffe036"/>
+    </g>
+  </g>
+</svg>

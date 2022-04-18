@@ -1,0 +1,239 @@
+
+
+$colorGreen:#81c268;
+
+#register_container {
+    // max-width: 1920px;
+    // min-height: calc(100vh - 200px);
+    // width: 100%;
+    // height: 500px;
+    // background-image: url("./../../image/vs_morning.svg");
+    // background-position: 0 160px;
+    // background-repeat: no-repeat;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // flex-direction: column;
+    // margin-bottom: 20px;
+    // margin-top: 30px;
+    // font-size: 20px;
+    // padding-bottom: 80px;
+    font-size: 20px;
+    max-width: 1920px;
+    min-height: calc(100vh - 200px);
+    width: 100%;
+    height: 500px;
+    background-image: url("./../../image/vs_morning.svg");
+    background-repeat: no-repeat;
+    background-position-y: 20px;
+
+    #register_info {
+        width: 700px;
+        margin: 30px auto;
+        text-align: center;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.95);
+        border-radius: 25px;
+
+        #now_location {
+            margin-top: 30px;
+            text-align: center;
+
+            span {
+                display: inline-block;
+                margin: 10px;
+            }
+        }
+        .register_text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 55px;
+
+            .register_title {
+                margin-bottom: 15px;
+            }
+            .register_content {
+                width: 85%;
+                display: flex;
+                justify-content: space-around;
+
+                .register_left {
+                    display: flex;
+                    justify-content: space-around;
+                    flex-direction: column;
+                    text-align: left;
+
+                    .register_left label {
+                        display: block;
+                        height: 35px;
+                        text-align: left;
+                        margin: 8px;
+                    }
+                    & .red_star::before {
+                        content: "*";
+                        color: red;
+                        font-size: 12px;
+                        vertical-align: text-top;
+                    }
+                    & .blank::before {
+                        content: "*";
+                        color: transparent;
+                        font-size: 12px;
+                    }
+                }
+
+                // & .register-right input {
+                //     display: block;
+                //     height: 24px;
+                //     width: 330px;
+                //     margin: 10px;
+                //     margin-left: 20px;
+                // }
+
+                .register-right {
+                    display: flex;
+                    justify-content: space-around;
+                    flex-direction: column;
+                    text-align: left;
+
+                    input {
+                        display: block;
+                        height: 35px;
+                        width: 405px;
+                        margin: 8px;
+                        margin-left: 20px;
+                    }
+
+                    .password_reg_box{
+                        position: relative;
+                        // border: 1px solid;
+                        text-align: right;
+                        
+                        .faEye_box{
+                            position: absolute;
+                            top: 10px;
+                            right: 15px;
+                            cursor: pointer;
+                        }
+                        
+                    }
+
+
+                    input[type="date"] {
+                        width: 405px;
+                        height: 35px;
+                    }
+                    // & .register-right input[type="date"]{
+                    //     width: 333px;
+                    //     height: 26px;
+                    // }
+                    //type=date長度跟別人不一樣
+                }
+
+            }
+
+            #my_register_button{
+                margin-top: 20px;
+                font-size: 20px;
+                cursor: pointer;
+                background-color: $colorGreen;
+                padding: 5px 8px;
+                color: #fff;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+// .register_container {
+//     max-width: 1920px;
+//     min-height: calc(100vh - 200px);
+//     width: 100%;
+//     height: 600px;
+//     background-image: url("./../../image/vs_morning.svg");
+//     background-position: 0 160px;
+//     background-repeat: no-repeat;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: column;
+//     margin-bottom: 20px;
+//     padding-bottom: 80px;
+
+//     #register_info {
+//         width: 700px;
+//         margin: 30px auto;
+//         text-align: center;
+//         padding: 20px;
+//         background-color: rgba(255, 255, 255, 0.95);
+//         border-radius: 25px;
+
+//         #now_location {
+//             margin-top: 30px;
+//             text-align: center;
+
+//             span {
+//                 display: inline-block;
+//                 margin: 10px;
+//             }
+//         }
+//         & .register_text {
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             flex-direction: column;
+
+//             .register_title {
+//                 margin-bottom: 15px;
+//             }
+//             & .register_content {
+//                 width: 70%;
+//                 display: flex;
+//                 justify-content: space-around;
+
+//                 .register_left label {
+//                     display: block;
+//                     height: 30px;
+//                     text-align: left;
+//                     margin: 10px;
+//                 }
+//                 & .red_star::before {
+//                     content: "*";
+//                     color: red;
+//                     font-size: 12px;
+//                     vertical-align: text-top;
+//                 }
+//                 & .blank::before {
+//                     content: "*";
+//                     color: transparent;
+//                     font-size: 12px;
+//                 }
+//                 & .register-right input {
+//                     display: block;
+//                     height: 24px;
+//                     width: 330px;
+//                     margin: 10px;
+//                     margin-left: 20px;
+//                 }
+//                 & .register-right input[type="date"]{
+//                     width: 333px;
+//                     height: 26px;
+//                 }
+//                 //type=date長度跟別人不一樣
+//             }
+//             & .register_btn button {
+//                 margin-top: 20px;
+//                 font-size: 24px;
+//             }
+//         }
+//     }
+// }

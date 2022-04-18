@@ -1,0 +1,225 @@
+$colorDay01: #747474;
+$colorDay02: #fff;
+$colorGrey01: #cac6c6;
+$colorGrey02: #555151;
+
+.member_schedule_container {
+  max-width: 1920px;
+  min-height: calc(100vh - 200px);
+  ::-webkit-scrollbar {
+    width: 3px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: $colorGrey02;
+    border-radius: 2px;
+  }
+  #member_container {
+    background-image: url("../../image/vs_morning.svg");
+    background-repeat: no-repeat;
+    // background-position: 0 40px;
+    display: flex;
+    height: 500px;
+    width: 100%;
+
+    .con_both {
+      flex: 1;
+      // /* border: 1px solid black; */
+      padding-top: 20px;
+
+      &.con_left {
+        flex-grow: 1;
+
+        .my_img{
+          width: 40%;
+          cursor: pointer;
+          border-radius: 50%;
+          :hover{
+            opacity: 0.7;
+          }
+
+        }
+
+        /* 左導覽列start */
+        #member_hi {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+
+          span span {
+            font-size: 2em;
+          }
+        }
+        #member_list {
+          background-color: #fff;
+          width: 60%;
+          text-align: center;
+          margin: 30px auto;
+
+          :nth-child(1) {
+            background-color: #81c268;
+            border-right: 3px solid #2b9635;
+          }
+
+          div {
+            margin: 0 auto;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+
+            &:hover {
+              background-color: #81c268;
+              border-right: 3px solid #2b9635;
+              cursor: pointer;
+            }
+          }
+        }
+
+        #member_logout {
+          width: 60%;
+          margin: 70px auto;
+
+          div {
+            width: 35%;
+            padding: 5px;
+            float: left;
+            text-align: center;
+            background-color: #555151;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+        }
+      } /* 左導覽列end */
+
+      &.con_right {
+        flex-grow: 3;
+        margin-left: 20px;
+        /* 現在位置start */
+        #now_location {
+          margin-top: 4%;
+          text-align: left;
+
+          span {
+            display: inline-block;
+            margin: 10px;
+          }
+        }
+        /* 現在位置end */
+        .top_title {
+          height: 10%;
+          margin-bottom: 10px;
+          width: 90%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          // position: absolute;
+          // top: 0;
+          .days {
+            width: 30%;
+            display: flex;
+            justify-content: space-between;
+          }
+          .day1 {
+            height: 100%;
+            width: 45%;
+            background-color: $colorDay01;
+            color: $colorDay02;
+            border-radius: 3px;
+            border: 1px $colorGrey02 solid;
+            line-height: 225%;
+            text-align: center;
+            margin-right: 5px;
+            cursor: pointer;
+          }
+          .day2 {
+            height: 100%;
+            width: 45%;
+            background-color: $colorDay02;
+            color: $colorDay01;
+            border: 1px $colorGrey02 solid;
+            border-radius: 5px;
+            line-height: 225%;
+            text-align: center;
+            cursor: pointer;
+          }
+
+          .my_pdf {
+            float: right;
+            background-color: $colorGrey01;
+            border-radius: 2px;
+            margin: 5px;
+            padding: 5px;
+            font-size: 10px;
+            cursor: pointer;
+          }
+        }
+
+        //行程表表頭
+        .my_title {
+          display: flex;
+          width: 90%;
+          text-align: center;
+          height: 50px;
+          margin-bottom: 0;
+          line-height: 50px;
+          :first-child {
+            width: 10%;
+            background-color: $colorDay02;
+          }
+          :nth-child(n + 2) {
+            width: 30%;
+          }
+
+          :nth-child(even) {
+            background-color: $colorGrey01;
+          }
+          :nth-child(3) {
+            background-color: lightgray;
+          }
+        }
+
+        .schedule_chart {
+          height: 55%;
+          width: 90%;
+          background-color: #ffffff;
+          overflow-y: scroll;
+          margin-top: 0;
+
+          > :nth-child(odd) {
+            background-color: $colorGrey01;
+          }
+
+          > div {
+            height: 40px;
+            padding: 10px 0;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            :first-child {
+              width: 10%;
+              // border: 1px solid;
+            }
+
+            :nth-child(n + 2) {
+              width: 30%;
+              // border: 1px solid;
+            }
+          }
+
+          > :first-child {
+            height: 10px;
+            background-color: $colorDay02;
+          }
+
+          &.chart02 {
+            display: none;
+          }
+
+          
+        }
+
+      }
+    }
+  }
+}

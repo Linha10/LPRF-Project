@@ -1,0 +1,19 @@
+.logout_container {
+  .logout {
+    .logout_btn {
+      width: 60px;
+      height: 25px;
+      background-color: #c7c7c7;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.3s;
+      cursor: pointer;
+      font-size: 14px;
+      &:hover {
+        background-color: #bdbdbd;
+      }
+    }
+  }
+}

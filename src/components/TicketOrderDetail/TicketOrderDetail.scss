@@ -1,0 +1,170 @@
+.ticket_order_detail_container {
+  // width:70%;
+  width: 100%;
+  height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  .ticket_order_detail {
+    width: 75%;//90%
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 0 5%;
+    .ticket_order_detail_title {
+      display: flex;
+      justify-content: center;
+      width: 30%;
+      height: 75px;
+      background-image: url("./../../image/ticket_title_black.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      //   margin-top: 90px;
+    }
+    .ticket_order_detail_content_container {
+      width: 70%;
+      height: 80%;
+      margin: 4% 0px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .ticket_order_detail_content_area {
+        width: 545px;
+        height: 475px;
+        /* margin: 0 10%; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        .ticket_order_detail_type {
+          width: 120px;
+          height: 35px;
+          font-size: 20px;
+          //   margin-bottom: 20px;
+          border: 1px solid #000000;
+          text-align: center;
+          line-height: 35px;
+          //   font-weight: bolder;
+          color: #000000;
+        }
+        .ticket_order_detail_info {
+          width: 100%;
+          .info {
+            font-size: 20px;
+            margin-bottom: 5px;
+          }
+          .line {
+            border-bottom: 1px solid #767676;
+          }
+        }
+        .order_info {
+          display: flex;
+          justify-content: space-between;
+          // margin-top: 10px;
+          .time {
+          }
+          .type_plus_count {
+          }
+        }
+
+        .price_box {
+          .price_title {
+          }
+          .price_total {
+            // margin-top: 10px;
+          }
+        }
+        .convenience_store_area {
+          display: flex;
+          .icon {
+            width: 210px;
+            height: 56px;
+            background-image: url(./../../image/store_icon.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin-top: 10px;
+          }
+          .credit_icon {
+            width: 45px;
+            height: 35px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            &.visa_icon {
+              background-image: url("./../../image/cc_visa_brands.svg");
+            }
+            &.master_icon {
+              background-image: url("./../../image/cc_mastercard_brands.svg");
+            }
+            &.jcb_icon {
+              background-image: url("./../../image/cc_jcb_brands.svg");
+            }
+          }
+        }
+        .input_area {
+          width: 346px;
+          display: flex;
+          justify-content: space-between;
+          align-items: end;
+          .input_credit_card_icon {
+            width: 25px;
+            height: 21px;
+            background-image: url("./../../image/credit_card_regular.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+          .credit_card_account {
+            .account {
+              margin-left: 15px;
+              //    border-radius: 10px;
+            }
+          }
+        }
+        .credit_card_time_code {
+          width: 346px;
+          display: flex;
+          justify-content: space-between;
+          .credit_card_time {
+            width: 140px;
+            display: flex;
+            justify-content: space-between;
+          }
+          .credit_code {
+          }
+        }
+        display: flex;
+        .text_area {
+          margin-top: 10px;
+          font-size: 12px;
+        }
+        .submit_btn {
+          margin-top: 10px;
+          display: flex;
+          justify-content: center;
+          .submit_content {
+            width: 60px;
+            border: 1px solid;
+            justify-content: center;
+            display: flex;
+          }
+        }
+        .btn_area {
+          display: flex;
+          justify-content: flex-start;
+          .prev_step {
+            padding: 0;
+            border: none 0;
+            font: inherit;
+            color: inherit;
+            cursor: pointer;
+            width: 126px;
+            height: 28px;
+            line-height: 28px;
+            background-color:#9ACE86 ;
+            margin-right: 20px;
+            color:#ffffff;
+            margin-right: 287px;
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,255 @@
+.shop_payment_container {
+  // width:70%;
+  width: 100%;
+  height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .payment {
+    width: 75%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 0 5%;
+    .payment_content_container {
+      // width: 70%;
+      height: 90%;
+      margin: 2% 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .payment_content_area {
+        width: 545px;
+        height: 475px;
+        /* margin: 0 10%; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        .payment_type {
+          width: 100%;
+          height: 60px;
+          background-color: #eeeeee;
+          //   margin-bottom: 20px;
+          // border: 1px solid #000000;
+          text-align: left;
+          //   font-weight: bolder;
+          color: #000000;
+          font-weight: 600;
+          font-size: 20px;
+          margin-bottom: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-sizing: border-box;
+          padding: 10px 0;
+          letter-spacing: 5px;
+          border-radius: 5px;
+        }
+        .payment_info {
+          width: 100%;
+          .info {
+            margin-bottom: 5px;
+          }
+          .line {
+            border-bottom: 1px solid #767676;
+          }
+        }
+        .order_info {
+          display: flex;
+          justify-content: space-between;
+          margin: 15px 0;
+          flex-direction: column;
+          // margin-top: 10px;
+          .time {
+          }
+          .order_detail {
+            display: flex;
+            flex-direction: column;
+            .each_ticket {
+              display: flex;
+              .ticket_price {
+                margin-left: 15px;
+              }
+            }
+          }
+        }
+
+        .price_box {
+          margin: 15px 0;
+          .price_title {
+          }
+          .price_total {
+            // margin-top: 10px;
+          }
+        }
+        .credit_card_area {
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-end;
+          box-sizing: border-box;
+          padding: 10px 10px 10px 0;
+          .icon {
+            width: 210px;
+            height: 56px;
+            background-image: url(./../../image/store_icon.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin-top: 10px;
+          }
+          .credit_icon {
+            width: 45px;
+            height: 35px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            // order: 1;
+            margin: 0 10px 8px 0;
+            transition: 0.3s;
+            &.master_icon {
+              background-image: url("./../../image/cc_mastercard_brands.svg");
+            }
+            &.visa_icon {
+              background-image: url("./../../image/cc_visa_brands.svg");
+            }
+            &.jcb_icon {
+              background-image: url("./../../image/cc_jcb_brands.svg");
+            }
+            &.scale_up_this_card {
+              width: 57px;
+              height: 47px;
+              order: 0;
+              // margin: 0;
+              &.master_icon {
+                filter: invert(22%) sepia(7%) saturate(5939%) hue-rotate(200deg)
+                  brightness(98%) contrast(83%);
+              }
+              &.visa_icon {
+                filter: invert(26%) sepia(84%) saturate(1081%)
+                  hue-rotate(335deg) brightness(109%) contrast(83%);
+              }
+              &.jcb_icon {
+                filter: invert(92%) sepia(89%) saturate(4216%)
+                  hue-rotate(315deg) brightness(108%) contrast(103%);
+              }
+            }
+          }
+        }
+        .input_area {
+          width: 100%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          margin: 15px 0;
+          .input_credit_card_icon {
+            width: 36px;
+            height: 30px;
+            background-image: url("./../../image/credit_card_regular.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+          }
+          .credit_card_number {
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+              -webkit-appearance: none;
+              margin: 0;
+            }
+            .number_input {
+              border: 1px solid #999;
+              height: 30px;
+              width: 60px;
+              text-align: center;
+              line-height: 20px;
+              padding: 0 3px;
+              border-radius: 3px;
+              margin-left: 15px;
+              outline: none;
+              &.notice {
+                border-color: red;
+              }
+              //    border-radius: 10px;
+            }
+          }
+        }
+        .credit_card_time_code {
+          width: 100%;
+          margin: 10px 0;
+          display: flex;
+          justify-content: flex-start;
+          .credit_card_time {
+            width: 140px;
+            display: flex;
+            justify-content: space-between;
+            > select {
+              border-radius: 5px;
+              border: 1px solid #999;
+              outline: none;
+            }
+          }
+          .credit_code > input {
+            border-radius: 5px;
+            border: 1px solid #999;
+            outline: none;
+            height: 30px;
+            margin-left: 30px;
+            padding: 0 3px;
+            width: 60px;
+          }
+        }
+        display: flex;
+        .text_area {
+          margin-top: 10px;
+          font-size: 12px;
+        }
+        .btn_area {
+          display: flex;
+          margin-top: 20px;
+          justify-content: space-around;
+          align-items: center;
+          .prev_step {
+            width: 240px;
+            height: 40px;
+            border-radius: 5px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            padding: 0;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: 20px;
+            // outline: 2px solid #999;
+            box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+
+            &:hover {
+              background-color: #E8e8e8;
+              box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+
+            }
+          }
+          .next_step {
+            width: 240px;
+            height: 40px;
+            border-radius: 5px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            padding: 0;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: 20px;
+            background-color:#96c782;
+            color: white;
+            // outline: 2px solid #999;
+            letter-spacing: 6px;
+            box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+            &:hover {
+              background-color:#81c268;//#ccc;
+              box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+            }
+          }
+        }
+      }
+    }
+  }
+}

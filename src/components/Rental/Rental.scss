@@ -1,0 +1,54 @@
+.Rental_container {
+    max-width: 1920px;
+  
+    // background-color: #c7c7c7;
+  }
+.rentalContainer{
+  // background-color: black;
+  position: relative;
+  top: 13vh;
+  height: 75vh;
+}
+.rentalTag{
+  position: relative;
+  left: 73px;
+  top: 95px;
+  width: 185px;
+}
+.rentalBtn{
+  
+  width: 33vh;
+  height: 5vh;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 0px;
+  color: white;
+  position: relative;
+  top: -20vh;
+  left: 40vh;
+  background-color: #A5A5A5;
+  a{
+    position: relative;
+    top: 0.5vh;
+    z-index: 1;
+    color: white;
+   
+  }
+  .myDownArrow{
+    padding-left: 2em;
+  }
+}
+.rentalBtn::after{
+  position: relative;
+  background-color: rgb(226, 226, 226);
+  filter: blur();
+  content: 'EasterEgg12';
+  color: rgb(226, 226, 226);
+  font-size: 70px;
+  opacity: 100%;
+  width: 300px;
+  height: 38vh;
+  z-index: -1;
+  top: -6vh;
+  left:  -3vh;
+}

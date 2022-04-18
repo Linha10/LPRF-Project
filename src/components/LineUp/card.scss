@@ -1,0 +1,158 @@
+*{
+    font-family: "Noto Sans TC", sans-serif;
+  }
+
+.modal-content{
+    // background-color: rgb(16, 157, 204);
+    border-radius: 24px !important;
+    width: 53vh !important;
+    // border:5px solid rgb(212, 137, 137);
+
+}
+
+//////////////
+.modal-title{
+    position: relative;
+    top: -1vh;
+    padding-top: 1vh;
+    padding-left: 2vh;
+    font-weight: 700;
+    font-family: Noto Sans Kannada;
+}
+.modal-body{
+    position: relative;
+    top: -2vh;
+    height: auto;
+    background-color: #080304;
+
+}
+
+.imgBox{
+    position: relative;
+    height: 12.5em;
+    width: 1vh; 
+    background-color: #525252;
+    left:2vh;
+    top: 4.5vh;
+    .Rise-img{
+       height:200px;
+    }
+    .KanaBoon{
+        height: 200px
+    }
+    .MWAN{
+        height: 200px;
+        
+    }
+    .Back-On{
+        position: relative;
+        left: 0vh;
+        padding-top: 2px;
+        height: 199px;
+    }
+    .ashes_remain{
+        height: 200px;
+    }
+    .MayShow{
+        height: 200px;
+    }
+    .adjust{
+        position: relative;
+        height: 200px;
+        padding-top: 2px;
+        border-radius: 7px;
+    }
+  
+}
+
+.mainArticle{
+    position: relative;
+    top: 7vh;
+    margin-top: 3.5em;
+    font-weight: 200;
+    left: 1.7vh;
+    // background-color: steelblue;
+    div{
+        // background-color: aqua;
+        margin-left: 1.5vh;
+        font-family: Noto Sans Kannada;
+        width:13.5vw;
+        height: 290px ;
+        font-size: 17px;
+        text-align: start;
+        color: #ffffff; 
+        padding-top: 4vh;
+    }
+}
+
+
+.socialMedia{
+    position: relative;
+    top: 2vh;
+    // background-color: #525252;
+   
+    .mediaIcons{
+        position: relative;
+        // left: -7vh;
+        bottom: 32vh;
+        margin-left: -2vw;
+        padding-bottom: 1vh;
+        top: -25vh;
+        margin-top: -2vh;
+        .fbIcon{
+            margin-left: -2vh;
+
+        }
+        .twitter{
+            position: relative;
+            top: 0.4vh;
+            left: -1vh;
+        }
+        .line{
+            position: relative;
+            left: -2vh;
+            top: -0.2vh;
+        }
+    }
+    .spotify4Rise{
+        position: relative;
+        margin-top: -15.6vw;
+        margin-left: 10.5vw;
+        padding-bottom: 5vh;
+        left: 4vh;
+        top: -4vh;
+        // background-color: red;
+    }
+    .spotify{
+        position: relative;
+        margin-top: -15.6vw;
+        margin-left: 10.5vw;
+        padding-bottom: 5vh;
+        left: 8vh;
+        // top:vh;
+        // bottom: 35vh;
+        // height: 1em;
+        // left: 21vh;
+        // top: -32vh;
+        iframe{
+            border: 3px solid gray;
+        }
+    }
+}
+
+.modal-footer{
+    height: 2vh;
+    position: relative;
+    top: -2vh;
+    background-color: #ffffff;
+    img{
+        margin-left: 6.5vh;
+      
+
+    }
+}
+
+  
+  .modal{
+   
+  }

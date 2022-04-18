@@ -1,0 +1,243 @@
+.credit_card_verification_container {
+  // width:70%;
+  width: 100%;
+  height: calc(100vh - 170px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .credit_card_verification {
+    width: 75%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 0 5%;
+    .verification_title {
+      display: flex;
+      justify-content: center;
+      width: 30%;
+      height: 75px;
+      background-image: url("./../../image/ticket_title_black.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      //   margin-top: 90px;
+    }
+    .verification_content_container {
+      // width: 70%;
+      height: 90%;
+      margin: 2% 0px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      .verification_type{
+        width: 100%;
+        height: 60px;
+        background-color: #eeeeee;
+        //   margin-bottom: 20px;
+        // border: 1px solid #000000;
+        text-align: left;
+        //   font-weight: bolder;
+        color: #000000;
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 10px 0;
+        letter-spacing: 5px;
+        border-radius: 5px;
+
+      }
+      .verification_content_top {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        .visa_logo {
+          background-image: url(./../../image/visa_logo.svg);
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 130px;
+          height: 80px;
+        }
+        .bank_logo {
+          background-image: url(./../../image/pngegg.png);
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 207px;
+          height: 80px;
+          margin-left: 20px;
+          background-position-y: center;
+        }
+      }
+      .verification_content_middle {
+        width: 545px;
+        // height: 80%;
+        /* margin: 0 10%; */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        .shop_name_box {
+          .shop_name_title {
+          }
+          .shop_name {
+            width: 302px;
+            height: 35px;
+            font-size: 16px;
+            text-align: left;
+            line-height: 35px;
+            color: #000000;
+            margin-bottom: 5px;
+          }
+        }
+        .price_info {
+          width: 100%;
+          .price_info_title {
+            .price {
+              margin-bottom: 5px;
+            }
+          }
+        }
+        .order_info {
+          .buy_date {
+          }
+          .time {
+            margin-bottom: 5px;
+          }
+        }
+        .send_code_btn {
+          width: 240px;
+          height: 40px;
+          border-radius: 5px;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          padding: 0;
+          border: none;
+          font: inherit;
+          color: inherit;
+          cursor: pointer;
+          transition: 0.3s;
+          margin-top: 20px;
+          box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+          &:hover {
+            // background-color: #999;
+            background-color: #E8E8E8;
+            box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+          }
+        }
+        .confirm_verify_btn {
+          width: 240px;
+          height: 40px;
+          border-radius: 5px;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          padding: 0;
+          border: none;
+          font: inherit;
+          color: inherit;
+          cursor: pointer;
+          transition: 0.3s;
+          margin-top: 20px;
+          background-color:#96c782;// #333;
+          box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+          color: white;
+          // outline: 2px solid #999;
+          &:hover {
+            // background-color: #999;
+            background-color:#81c268; // #555;
+            box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+          }
+        }
+        .verify_code_area {
+          margin-top: 20px;
+          input::-webkit-outer-spin-button,
+          input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
+          > input.verify_code_input {
+            border: 1px solid #ccc;
+            height: 30px;
+            width: 25px;
+            text-align: center;
+            line-height: 20px;
+            padding: 0 3px;
+            border-radius: 3px;
+            margin-left: 15px;
+            outline: none;
+            &:first-child {
+              margin-left: 5px;
+            }
+          }
+        }
+      }
+      .verification_content_last {
+        .input_area {
+          width: 346px;
+          .credit_card_number_title {
+          }
+        }
+
+        display: flex;
+        .text_area {
+          margin-top: 25px;//10px;
+          font-size: 12px;
+          color: indianred;
+          font-weight: 600;
+        }
+      }
+      .submit_btn {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        .submit_content {
+          width: 60px;
+          border: 1px solid;
+          justify-content: center;
+          display: flex;
+        }
+      }
+      .btn_area {
+        display: flex;
+        .prev_step {
+          padding: 0;
+          border: none 0;
+          font: inherit;
+          color: inherit;
+          cursor: pointer;
+          width: 126px;
+          height: 28px;
+          line-height: 28px;
+          // background-color:#9ACE86 ;
+          margin-right: 20px;
+          // color:#ffffff;
+          margin-right: 287px;
+        }
+        .next_step {
+          padding: 0;
+          border: none 0;
+          font: inherit;
+          color: inherit;
+          cursor: pointer;
+          width: 126px;
+          height: 28px;
+          line-height: 28px;
+          // background-color:#9ACE86 ;
+
+          // color:#ffffff;
+        }
+
+        .temp_payment_switch_btn {
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1050px) {
+    transform: scale(0.9);
+    margin-top: 70px;
+  }
+}

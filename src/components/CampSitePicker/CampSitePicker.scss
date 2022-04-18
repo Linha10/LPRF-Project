@@ -1,0 +1,519 @@
+.camp_site_picker_container {
+  position: relative;
+  width: 100%;
+  font-family: "Noto Sans";
+  .pale_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+  }
+  .camp_site_picker {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    .camp_map_wrapper {
+      position: relative;
+      width: 1200px;
+      height: 700px;
+      // transform: scale(1.2);
+      // transform-origin: top;
+      .to_be_select {
+        position: absolute;
+        right: 50px;
+        top: 50px;
+        width: 160px;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        border-radius: 5px;
+        box-sizing: border-box;
+        padding: 10px;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 4;
+        .select_title {
+          height: 30px;
+          width: 160px;
+          display: flex;
+          justify-content: center;
+          background-color: #e2e2e2;
+          border-radius: 5px;
+          align-items: center;
+        }
+        .select_list {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          box-sizing: border-box;
+          padding: 10px 0;
+          .each_camp_ticket {
+            height: 30px;
+            width: 100%;
+            // padding: 5px 15px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            .camp_name {
+              height: 20px;
+              display: flex;
+              align-items: center;
+              font-size: 16px;
+              color: #666;
+              padding: 5px;
+            }
+            .camp_site {
+              height: 20px;
+              display: flex;
+              align-items: center;
+              font-size: 16px;
+              color: #666;
+              padding: 5px;
+            }
+            .check_icon {
+              width: 16px;
+              height: 16px;
+              background-image: url("./../../image/check.svg");
+              background-repeat: no-repeat;
+              background-size: 100%;
+              padding: 5px;
+              filter: invert(86%) sepia(35%) saturate(6287%) hue-rotate(68deg)
+                brightness(93%) contrast(84%);
+              //   opacity: 0;
+              transition: 0.3s;
+              //   transform: scaleX(0);
+              display: hidden;
+              &.show_check {
+                // opacity: 1;
+                display: block;
+                // transform: scaleX(1);
+              }
+            }
+          }
+        }
+      }
+      .camp_bg_map {
+        width: 100%;
+        height: 100%;
+        background-image: url("./../../image/campmap.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 0;
+        transition: 0.3s;
+        &.bg_pale {
+          // filter: brightness(0.7);
+        }
+        &.camp_map_blur {
+          filter: blur(20px);
+          opacity: 0.8;
+        }
+      }
+      .camp_detail_cover {
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        .stage {
+          background-image: url("./../../image/show.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 83px;
+          height: 89px;
+          position: absolute;
+          left: 481px;
+          top: 200px;
+          z-index: 3;
+          pointer-events: none;
+          opacity: 0.8;
+          transition: 0.5s;
+          &.stage_blur {
+            filter: blur(20px);
+            opacity: 0.8;
+          }
+        }
+        .camp {
+          width: 170px;
+          height: 128px;
+          z-index: 1;
+          position: absolute;
+          cursor: pointer;
+          transition: 0.3s;
+          // &:hover {
+          //   transform: scale(1.2);
+          // }
+          &.area_blur {
+            filter: blur(20px);
+            opacity: 0.8;
+          }
+          &.camp_A {
+            background-image: url("./../../image/A_CAMP.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            left: 396px;
+            top: 167px;
+            &:hover {
+              background-image: url("./../../image/A_CAMP_2.png");
+              left: 396px;
+              top: 160px;
+              height: 135px;
+              cursor: pointer;
+            }
+          }
+          &.camp_B {
+            background-image: url("./../../image/B_CAMP.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 200px;
+            height: 132px;
+            bottom: 153px;
+            right: 295px;
+            z-index: 4;
+            &:hover {
+              background-image: url("./../../image/B_CAMP_2.png");
+              bottom: 153px;
+              right: 295px;
+              width: 200px;
+              height: 139px;
+              cursor: pointer;
+            }
+          }
+          &.camp_C {
+            background-image: url("./../../image/C_CAMP.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 162px;
+            height: 88px;
+            right: 174px;
+            bottom: 235px;
+            &:hover {
+              background-image: url("./../../image/C_CAMP_2.png");
+              width: 162px;
+              height: 100px;
+              right: 174px;
+              bottom: 228px;
+              cursor: pointer;
+            }
+          }
+        }
+        .tree {
+          background-repeat: no-repeat;
+          background-size: contain;
+          position: absolute;
+          z-index: 5;
+          transition: 0.3s;
+          &.tree_blur {
+            filter: blur(20px);
+            opacity: 0.8;
+          }
+          &.tree_one {
+            background-image: url("./../../image/tree.png");
+            width: 85px;
+            height: 107px;
+            bottom: 207px;
+            right: 141px;
+          }
+          &.tree_two {
+            background-image: url("./../../image/tree2.png");
+            width: 23px;
+            height: 28px;
+            bottom: 223px;
+            right: 221px;
+          }
+          &.tree_three {
+            background-image: url("./../../image/tree3.png");
+            width: 32px;
+            height: 40px;
+            bottom: 277px;
+            right: 304px;
+          }
+        }
+        .pointer_line {
+          transition: 0.3s;
+          &.pointer_line_blur {
+            filter: blur(20px);
+            opacity: 0.8;
+          }
+          .item {
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+
+            &.camp_title {
+              width: 123px;
+              height: 50px;
+              right: 265px;
+              top: 45px;
+              font-size: 36px;
+              color: #888;
+              font-weight: 500;
+            }
+            &.line_and_circle {
+              position: absolute;
+
+              &.line_one {
+                right: 419px;
+                top: 84px;
+                width: 280px;
+                height: 100px;
+                background-image: url("./../../image/line_one.png");
+              }
+
+              &.line_two {
+                width: 43px;
+                height: 294px;
+                position: absolute;
+                right: 365px;
+                bottom: 303px;
+                transition: 0.2s;
+                background-image: url("./../../image/line_two.png");
+              }
+
+              &.line_three {
+                width: 49px;
+                height: 244px;
+                position: absolute;
+                right: 270px;
+                top: 115px;
+                background-image: url("./../../image/line_three.png");
+              }
+            }
+          }
+        }
+      }
+      .camp_area {
+        width: 100%;
+        height: 100%;
+        //   background-color: rgb(243, 243, 243);
+        // display: flex;
+        justify-content: center;
+        align-items: center;
+
+        box-sizing: border-box;
+        padding: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        // background-color: #6ff;
+        z-index: 10;
+        display: none;
+        &.camp_area_show {
+          display: flex;
+        }
+        .camp_group {
+          display: flex;
+          // flex-direction: column;
+          flex-grow: 1;
+          // background-color: rgb(243, 243, 243);
+          margin: 20px;
+          justify-content: center;
+          align-items: center;
+          pointer-events: none;
+          display: none;
+          transition: 0.3s;
+          position: relative;
+          &.camp_group_show {
+            opacity: 1;
+            transform: scale(1);
+            pointer-events: auto;
+            display: flex;
+          }
+          .pick_wrapper {
+            width: 400px;
+            position: relative;
+            // perspective: 500px;
+            // transform: perspective(160px) rotateX(10deg) rotateZ(-40deg);
+            .camp_area_name {
+              height: 40px;
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            .close_icon {
+              width: 16px;
+              height: 16px;
+              background-image: url("./../../image/close.svg");
+              background-repeat: no-repeat;
+              background-size: cover;
+              position: absolute;
+              right: 30px;
+              top: 12px;
+              cursor: pointer;
+            }
+            .camp_area_site {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+
+              .each_camp {
+                width: 80px;
+                height: 80px;
+                // border: 1px solid #333;
+                cursor: pointer;
+                transition: 0.5s;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                user-select: none;
+                border-radius: 5px;
+                margin: 5px;
+                box-sizing: border-box;
+                padding: 10px;
+                background-color: #e7e4cb;
+                position: relative;
+                &.selected_by_others {
+                  background-color: #bb9136;
+                  pointer-events: none;
+                  &:hover {
+                    background-color: #bb9136;
+                  }
+                }
+                &.selected_by_me {
+                  background-color: #ffca56;
+                  // pointer-events: none;
+                  &:hover {
+                    background-color: #ffca56;
+                  }
+                }
+                &.disabled {
+                  filter: brightness(0.5);
+                  pointer-events: none;
+                }
+                &.finished {
+                  filter: brightness(0.5);
+                  pointer-events: none;
+                }
+                &.finished.selected_by_me {
+                  pointer-events: auto;
+                  filter: brightness(1);
+                  &:hover {
+                    filter: brightness(1.2);
+                  }
+                }
+                &:hover {
+                  background-color: #e2e2e2;
+                }
+                .camp_id {
+                  // width: 10%;
+                  // height: 10%;
+                  // padding: 10px;
+                  line-height: 10%;
+                  // position: absolute;
+                  // background-color: rgb(243, 243, 243);
+                  // top: 10px;
+                  // left: 10px;
+                  // font-size: 10px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                }
+                .camp_type {
+                  width: 100%;
+                  height: 100%;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  background-position: center;
+                  margin: 0 0 10px 0;
+                  &.budget {
+                    background-image: url("./../../image/campA.png");
+                  }
+                  &.fancy {
+                    background-image: url("./../../image/campB.png");
+                  }
+                }
+              }
+            }
+          }
+          .camp_island {
+            // position: absolute;
+            // left: 0;
+            // top: 0;
+            width: 160px;
+            height: 100px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: 0 0;
+            margin: 30px 50px 0 0;
+            &.island_A {
+              background-image: url("./../../image/A_CAMP_2.png");
+            }
+            &.island_B {
+              background-image: url("./../../image/B_CAMP_2.png");
+            }
+            &.island_C {
+              background-image: url("./../../image/C_CAMP_2.png");
+            }
+          }
+        }
+      }
+      .confirm_btn_area {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 120px;
+        width: 100%;
+        transform: translateY(100vh);
+        transition: 0.5s;
+        z-index: 15;
+        &.finished {
+          transform: translateY(0);
+          transition: 0.5s;
+          .confirm_btn {
+            animation: btnPulse 1.7s ease-in-out infinite;
+          }
+        }
+        .confirm_btn {
+          height: 40px;
+          width: 100px;
+          display: flex;
+          justify-content: center;
+          background-color: #333;
+          color: #fff;
+          border-radius: 5px;
+          align-items: center;
+          cursor: pointer;
+          transition: 0.3s;
+          font-size: 20px;
+          cursor: pointer;
+          &:hover {
+            background-color: #555;
+          }
+        }
+      }
+    }
+  }
+
+  // @media screen and (min-width: 640px) and (max-width: 1920px) {
+  //   &.camp_site_picker_container {
+  //     transform: scale(calc(var(--main-width) / 1920));
+  //     transform-origin: top;
+  //   }
+  // }
+  @media screen and (max-width: 1050px) {
+    &.camp_site_picker_container {
+      // transform: scale(0.7);
+      // transform-origin: top;
+    }
+  }
+
+  @keyframes btnPulse {
+    0% {
+      transform: scale(1.02) translateY(0);
+    }
+    50% {
+      transform: scale(1.08) translateY(0);
+    }
+    100% {
+      transform: scale(1.02) translateY(0);
+    }
+  }
+}

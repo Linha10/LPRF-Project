@@ -1,0 +1,935 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  position: relative;
+  display: flexbox;
+  font-style: normal;
+}
+
+#header {
+  width: 180px;
+  font-weight: 600;
+  margin: 100px 0 0 200px;
+  height: 44px;
+  font-size: 36px;
+  line-height: 44px;
+  color: #4e5150;
+}
+
+#rows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.formContainer {
+  margin: auto;
+  overflow: auto;
+  z-index: 0;
+}
+
+.formContainer div {
+  z-index: 0;
+}
+
+.col-1 {
+  position: fixed;
+}
+
+.cols {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  margin-left: 200px;
+}
+
+.heads {
+  width: 180px;
+  font-weight: 600;
+  height: 50px;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 51px 0 0 0;
+  color: #333333;
+}
+
+.label-heads {
+  width: 75px;
+  height: 15px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #4f4f4f;
+}
+
+.label-heads .tel {
+  position: absolute;
+  top: 135px;
+}
+
+.payment-shipping {
+  font-family: "Montserrat", sans-serif;
+  height: 350px;
+  position: relative;
+  top: 830px;
+  right: 360px;
+  font-size: 18px;
+}
+
+.contact-tag {
+  position: relative;
+  text-align: inherit;
+  left: 100px;
+  top: 30px;
+}
+
+#email-label,
+#name-label,
+#city-label,
+#country-label {
+  margin-top: 15px;
+}
+
+#call-label,
+#add-label {
+  margin-top: 20px;
+}
+
+#zip-label {
+  margin: -81px 0 0 248px;
+}
+
+#check-label {
+  margin: 23px 0 0 -8px;
+}
+
+#submit-label {
+  margin: 23px 0 159px 305px;
+}
+
+#subbtn {
+  position: relative;
+  width: 166px;
+  height: 54px;
+  background-color: #6bf066;
+  font-weight: 600;
+  border-radius: 12px;
+  border-style: none;
+  color: #ffffff;
+  cursor: pointer;
+  bottom: 10px;
+  right: 50px;
+}
+
+#subbtn:hover {
+  background-color: whitesmoke;
+  color: black;
+  font-weight: 600;
+}
+
+.material-icons {
+  position: absolute;
+  left: 214px;
+  color: #828282;
+}
+
+.mail {
+  top: 175px;
+}
+
+.call {
+  top: 280px;
+}
+
+.person {
+  top: 453px;
+}
+
+.home {
+  top: 558px;
+}
+
+.apartment {
+  top: 658px;
+}
+
+.public {
+  top: 755px;
+}
+
+.markunread_mailbox {
+  top: 755px;
+  left: 465px;
+}
+
+.contain {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 6px;
+  border: 1px solid #828282;
+  border-radius: 12px;
+  width: 465px;
+  height: 56px;
+  text-indent: 52px;
+}
+
+.tel {
+  top: 130px;
+  position: absolute;
+}
+
+#zip-input {
+  width: 217px;
+  height: 52px;
+}
+
+#dropdown {
+  width: 217px;
+  height: 56px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("https://i.imgur.com/mE9Z2eJ.png") white no-repeat 98.5% !important;
+  background: url("https://i.imgur.com/mE9Z2eJ.png") white no-repeat calc(100% - 10px) !important;
+}
+
+input[type="checkbox"] {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  margin-left: 10px;
+}
+
+#save-text {
+  vertical-align: baseline;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+#col2 {
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  padding: 30px 0px 40px 34px;
+  height: 700px;
+  width: 600px;
+  position: absolute;
+  left: 550px;
+  top: 100px;
+  height: 700px;
+  width: 700px;
+}
+
+.item-row {
+  text-align: left;
+  line-height: 2;
+  clear: left;
+}
+
+.pic {
+  border-radius: 13px;
+  width: 134.21px;
+  height: 136.27px;
+  float: left;
+  margin-right: 19px;
+  margin-bottom: 32px;
+}
+
+.item1,
+.item2 {
+  margin: 0;
+  text-align: left;
+}
+
+.item-label {
+  height: 22.21px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #4e5150;
+  margin: 0;
+}
+
+.spl {
+  width: 82.77px;
+  height: 29.27px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #f2994a;
+}
+
+strike {
+  width: 49.46px;
+  height: 17.16px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #4e5150;
+}
+
+.qty {
+  margin: 30px 63px 0 155px;
+  padding: 10px 10px 14px;
+  border: 1px solid #828282;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 12px;
+  width: 135px;
+  height: 52px;
+  text-align: center;
+}
+
+.qty-no {
+  margin: 0 20px 0;
+}
+
+.btn-no {
+  border-style: none;
+  border-radius: 4px;
+  width: 21px;
+  height: 21px;
+  color: #828282;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#hr1 {
+  margin-top: 95px;
+}
+
+.horizontal {
+  width: 327.06px;
+  height: 0;
+  border: 1.5px solid #bdbdbd;
+}
+
+.details {
+  clear: left;
+  margin-right: 30px;
+}
+
+.detail-title {
+  height: 28px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+  position: absolute;
+  top: 280px;
+}
+
+#sp, #tp {
+  text-align: right;
+  margin-left: 210px;
+}
+
+#footer {
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  vertical-align: top;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px;
+  color: #bdbdbd;
+}
+
+a {
+  text-decoration: none;
+  color: #bdbdbd;
+}
+
+a:hover {
+  color: #18a0fb;
+}
+
+@media only screen and (max-width: 1250px) {
+  body {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  #col1, #header {
+    margin-left: 100px;
+  }
+  .material-icons {
+    left: 120px;
+  }
+  .markunread_mailbox {
+    left: 365px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  body {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+  }
+  #col1, #header {
+    margin-left: 50px;
+  }
+  #header {
+    margin-top: 50px;
+  }
+  .material-icons {
+    left: 65px;
+  }
+  .markunread_mailbox {
+    left: 315px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  body {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  #col1, #header {
+    margin-left: 10px;
+  }
+  #header {
+    margin-top: 10px;
+  }
+  .material-icons {
+    left: 25px;
+  }
+  .markunread_mailbox {
+    left: 275px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
+  }
+  #col1, #header {
+    margin-left: -40px;
+  }
+  #header {
+    margin-top: 10px;
+  }
+  .material-icons {
+    left: -25px;
+  }
+  .markunread_mailbox {
+    left: 225px;
+  }
+  #col2 {
+    text-align: center;
+    margin-right: 30px;
+  }
+  .horizontal {
+    width: 325px;
+    margin-right: 20;
+  }
+  #footer {
+    margin-bottom: -50px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+  #col1, #header {
+    margin-left: -75px;
+  }
+  .material-icons {
+    left: -60px;
+  }
+  .markunread_mailbox {
+    left: 190px;
+  }
+  #col2 {
+    margin-right: 10px;
+  }
+  #header {
+    margin-top: -50px;
+  }
+  #footer {
+    margin-bottom: -100px;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  body {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  #rows {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
+  .cols {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #col1, #header {
+    margin-left: 75px;
+  }
+  #header {
+    margin-top: 50px;
+  }
+  .contain {
+    width: 565px;
+  }
+  .material-icons {
+    left: 90px;
+  }
+  #col2 {
+    text-align: center;
+    margin: 50px 80px 0;
+  }
+  .mail {
+    top: 790px;
+  }
+  .call {
+    top: 895px;
+  }
+  .person {
+    top: 1070px;
+  }
+  .home {
+    top: 1175px;
+  }
+  .apartment {
+    top: 1272px;
+  }
+  .public {
+    top: 1372px;
+  }
+  .markunread_mailbox {
+    top: 1372px;
+    left: 380px;
+  }
+  #dropdown {
+    width: 275px;
+  }
+  #zip-input {
+    width: 275px;
+  }
+  #zip-label {
+    margin: -81px 0 0 290px;
+  }
+  #submit-label {
+    margin: 23px 0 95px 400px;
+  }
+  .horizontal {
+    width: 91%;
+    margin: 0;
+  }
+  #footer {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #rows {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
+  .cols {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+  }
+  #col1, #header {
+    margin-left: 12px;
+  }
+  .material-icons {
+    left: 30px;
+  }
+  .mail {
+    top: 800px;
+  }
+  .call {
+    top: 905px;
+  }
+  .person {
+    top: 1080px;
+  }
+  .home {
+    top: 1185px;
+  }
+  .apartment {
+    top: 1282px;
+  }
+  .public {
+    top: 1382px;
+  }
+  .markunread_mailbox {
+    top: 1382px;
+    left: 320px;
+  }
+  #col2 {
+    text-align: center;
+    margin: 55px 60px 0 50px;
+    padding: 40px;
+  }
+  .horizontal {
+    width: 91%;
+    margin: 0;
+  }
+  .pic {
+    margin-right: 50px;
+  }
+  .qty {
+    margin: 30px 0 0 185px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #rows {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
+  .cols {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+  }
+  #header {
+    margin-top: 32px;
+  }
+  #col1, #header {
+    margin-left: 25px;
+  }
+  .contain {
+    width: 500px;
+  }
+  .material-icons {
+    left: 40px;
+  }
+  .mail {
+    top: 800px;
+  }
+  .call {
+    top: 905px;
+  }
+  .person {
+    top: 1080px;
+  }
+  .home {
+    top: 1185px;
+  }
+  .apartment {
+    top: 1282px;
+  }
+  .public {
+    top: 1382px;
+  }
+  .markunread_mailbox {
+    top: 1382px;
+    left: 330px;
+  }
+  #dropdown {
+    width: 223px;
+  }
+  #zip-input {
+    width: 213px;
+  }
+  #zip-label {
+    margin: -81px 0 0 287px;
+  }
+  #submit-label {
+    margin: 23px 0 95px 340px;
+  }
+  #col2 {
+    text-align: center;
+    margin: 55px 50px 0;
+    padding: 40px 35px;
+  }
+  .horizontal {
+    width: 91%;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #rows {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
+  .cols {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+  }
+  #header {
+    margin-top: 32px;
+  }
+  #col1, #header {
+    margin-left: 20px;
+  }
+  .contain {
+    width: 450px;
+  }
+  .material-icons {
+    left: 35px;
+  }
+  .mail {
+    top: 790px;
+  }
+  .call {
+    top: 895px;
+  }
+  .person {
+    top: 1070px;
+  }
+  .home {
+    top: 1175px;
+  }
+  .apartment {
+    top: 1275px;
+  }
+  .public {
+    top: 1370px;
+  }
+  .markunread_mailbox {
+    top: 1370px;
+    left: 280px;
+  }
+  #dropdown {
+    width: 210px;
+  }
+  #zip-input {
+    width: 210px;
+  }
+  #zip-label {
+    margin: -81px 0 0 242px;
+  }
+  #submit-label {
+    margin: 23px 0 95px 290px;
+  }
+  #col2 {
+    text-align: center;
+    margin: 55px 20px 0;
+    padding: 30px 0px 40px 30px;
+  }
+  .horizontal {
+    width: 91%;
+    margin: 0;
+  }
+}
+
+.shipping-method {
+  position: relative;
+  left: 350px;
+  bottom: 50px;
+}
+
+@media only screen and (max-width: 510px) {
+  #rows {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
+  .cols {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+  }
+  #header {
+    margin-top: 32px;
+  }
+  #col1, #header {
+    margin-left: 30px;
+  }
+  #col2 {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    margin: 0;
+    padding: 40px 0px;
+    text-align: center;
+  }
+  .horizontal {
+    width: 85%;
+    margin: 0 30px;
+  }
+  .material-icons {
+    left: 40px;
+  }
+  .mail {
+    top: 734px;
+  }
+  .call {
+    top: 824px;
+  }
+  .person {
+    top: 975px;
+  }
+  .home {
+    top: 1065px;
+  }
+  .apartment {
+    top: 1150px;
+  }
+  .public {
+    top: 1235px;
+  }
+  .markunread_mailbox {
+    top: 1235px;
+    left: 232.5px;
+  }
+  .item-row {
+    margin-left: 40px;
+  }
+  .heads {
+    width: 179.85px;
+    height: 16.52px;
+    font-size: 14px;
+    line-height: 17px;
+    top: -20px;
+    position: absolute;
+  }
+  .label-heads {
+    width: 136.83px;
+    height: 11.27px;
+    font-size: 10px;
+    line-height: 12px;
+    position: absolute;
+    top: 135px;
+  }
+  .contain {
+    width: 375px;
+    height: 41px;
+    text-indent: 39px;
+  }
+  #dropdown {
+    width: 183px;
+    height: 41px;
+  }
+  #zip-input {
+    width: 183px;
+    height: 37px;
+  }
+  #zip-label {
+    margin: -66px 0 0 192px;
+  }
+  #submit-label {
+    margin: 23px 0 95px 215px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  #header {
+    width: 120px;
+    height: 29px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  #col1, #header {
+    margin-left: 15px;
+  }
+  .material-icons {
+    left: 25px;
+  }
+  .mail {
+    top: 709px;
+  }
+  .call {
+    top: 799px;
+  }
+  .person {
+    top: 955px;
+  }
+  .home {
+    top: 1045px;
+  }
+  .apartment {
+    top: 1130px;
+  }
+  .public {
+    top: 1213px;
+  }
+  .markunread_mailbox {
+    top: 1213px;
+    left: 202.5px;
+  }
+  #col2 {
+    margin: 0 0 0 -7px;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    padding: 30px 0px 40px;
+  }
+  .item-row {
+    margin-left: 34px;
+  }
+  .horizontal {
+    width: 85%;
+  }
+  .detail-title {
+    margin-left: 30px;
+  }
+  #col1 {
+    margin-top: 0;
+  }
+  .contain {
+    width: 340px;
+    height: 41px;
+    text-indent: 39px;
+  }
+  #dropdown {
+    width: 163px;
+    height: 41px;
+  }
+  #zip-input {
+    width: 163px;
+    height: 37px;
+  }
+  #zip-label {
+    margin: -66px 0 0 177px;
+  }
+  #submit-label {
+    margin: 23px 0 95px 180px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  #col1, #header {
+    margin-left: 10px;
+  }
+  #col2 {
+    margin-left: -12px;
+  }
+  .material-icons {
+    left: 20px;
+  }
+  .markunread_mailbox {
+    top: 1210px;
+    left: 198px;
+  }
+}
+
+.left-cart {
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  padding: 30px 0px 40px 34px;
+  height: 650px;
+  width: 400px;
+  position: absolute;
+  left: 1100px;
+  top: 100px;
+  opacity: 80%;
+}
+/*# sourceMappingURL=CheckOut.css.map */

@@ -1,0 +1,124 @@
+.User_container {
+  font-size: 20px;
+  max-width: 1920px;
+  min-height: calc(100vh - 200px);
+  width: 100%;
+  height: 500px;
+  background-image: url("./../../image/vs_morning.svg");
+  background-repeat: no-repeat;
+  background-position-y: 20px;
+  #now_location {
+    margin-top: 30px;
+    padding-top: 50px;
+    text-align: center;
+
+    span {
+      display: inline-block;
+      margin: 10px;
+      // margin-top: 50px;
+    }
+  }
+
+  #sign_info {
+    width: 500px;
+    height: 480px;
+    margin: auto;
+    margin-top: 75px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 25px;
+
+    div {
+      width: 300px;
+      margin: auto;
+      padding-top: 5px;
+    }
+
+    .signin_label {
+      display: inline-block;
+      width: 300px;
+      text-align: left;
+      margin-top: 10px;
+    }
+
+    .password_box {
+      position: relative;
+      text-align: right;
+
+      .faEye_box {
+        position: absolute;
+        top: 2px;
+        right: 7px;
+        width: 10%;
+        cursor: pointer;
+      }
+    }
+
+    #member_account {
+      width: 300px;
+      height: 35px;
+      text-align: left;
+    }
+
+    #member_password {
+      width: 300px;
+      height: 35px;
+      text-align: left;
+    }
+
+    #submit_info {
+      // display: block;
+      // width: 70px;
+      // height: 30px;
+      // margin: 20px auto;
+      display: block;
+      width: 100px;
+      height: 35px;
+      margin: 30px auto 20px auto;;
+      
+    }
+
+    #join_member {
+      width: 40%;
+      display: flex;
+      justify-content: space-around;
+
+      a {
+        color: #000;
+      }
+    }
+
+    #another_login {
+      margin-top: 5px;
+      margin-bottom: 10px;
+      width: 250px;
+      height: 35px;
+      display: flex;
+      // justify-content: space-around;
+      // border-radius: 10px;
+      background-color: #ff4a4a;
+      color: #fff;
+      // flex-grow: 1;
+      padding-left: 20px;
+      padding-right: 20px;
+      cursor: pointer;
+      padding-top: 0px;
+
+      .my_google {
+        width: 50px;
+        height: 50px;
+        // flex-grow: 1;
+        align-items: center;
+        padding-top: 0px;
+      }
+
+      .my_sign {
+        // flex-grow: 4;
+        line-height: 35px;
+        margin-left: 5px;
+        padding-top: 0px;
+      }
+    }
+  }
+}

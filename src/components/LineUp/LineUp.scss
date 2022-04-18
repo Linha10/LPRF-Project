@@ -1,0 +1,405 @@
+* {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.line_up_container {
+  max-width: 1920px;
+  // background-color: #c7c7c7;
+
+
+.lineTableSetting {
+  height: 90vh;
+  position: relative;
+  left: 9vh;
+  align-content: center;
+  align-items: center;
+  // overflow: visible;
+  // background-color: lemonchiffon;
+}
+.lineTableSettingNight {
+  height: 100vh;
+  position: relative;
+  left: 9vh;
+  align-content: center;
+  align-items: center;
+}
+
+.designLineUp {
+  position: relative;
+  top: 14vh;
+  margin-left: 10vh;
+  margin-top: -5vh;
+  width: 11%;
+}
+.allTable {
+  position: relative;
+  left: -9vh;
+
+  // background-color: #C6C6C6;
+}
+.giveMeSpace {
+  position: relative;
+  top: 4vh;
+}
+
+.daySunBox {
+  position: relative;
+  left: 59vh;
+  width: 50vh;
+  // background-color: gray;
+  height: 10vh;
+  padding-top: 2vh;
+  padding-right: 2vh;
+  .sun {
+    position: relative;
+    height: 15vh;
+    right: 20vh;
+    float: left;
+    transition: 1s;
+    // background-color: lawngreen;
+  }
+  .sun2 {
+    position: relative;
+    height: 15vh;
+    right: 73px;
+    float: left;
+    transition: 1s;
+  }
+  .moon {
+    // visibility: visible;
+    position: relative;
+    height: 15vh;
+    right: 36vh;
+    top: 5vh;
+    transition:1s ;
+    opacity: 0%;
+  }
+  .moon-Clicked {
+    position: relative;
+    height: 15vh;
+    right: 30vh;
+    top: 5vh;
+    // float: left;
+    opacity: 100%;
+    transform: translate(-152px, -40px);
+    // z-index: -1;
+    // background-color: aqua; //will show to right
+    transition:1s ;
+  }
+  .moon2 {
+    position: relative;
+    height: 15vh;
+    right: 24vh;
+    top: 5vh;
+    // float: left;
+    opacity: 1;
+    transition: opacity 1s ease-in 1s, 1s;
+    z-index: -1;
+    background-color: gray;
+  }
+}
+.normalType{
+  transition:0.8s;
+}
+.whyTest{
+  background-color: #474747;
+  transition: 0.8s;
+  .inTableTime{
+    color: #FFFFFF;
+  }
+  .hrefColor{
+    color:#FFFFFF;
+    border: 1px solid ;
+
+  }
+  .hereBtn{
+    // background-color: #f0f0f0;
+  }
+  
+  
+}
+
+.sun-Clicked {
+  transform: translate(-50px, 50px);
+  opacity: 0%;
+}
+
+// .daySunBox::after{
+//   z-index: 0;
+//   position: relative;
+//   content: 'EasterEggs';
+//   font-size: 24px;
+//   // text-indent: -9999px;
+//   color: white;
+//   // visibility: hidden;
+//   left: -38vh;
+//   opacity: 100%;
+//   padding-left:5vh;
+//   padding-top: 7vh;
+//   top: 5vh;
+//   height: 25vh;
+//   background:linear-gradient(rgb(255, 253, 253),white);
+//  border-radius: 2px;
+
+// }
+// .moon-active{
+//   position: relative;
+//   height: 15vh;
+//   right:30vh;
+//   top: 1vh;
+//   opacity: 100%;
+// }
+
+.btnG {
+  position: relative;
+  left: 60vh;
+  top: -2vh;
+  // border-left: 2vh;
+
+  .campDay1 {
+    // background-color: tomato;
+    height: 4vh;
+    right: 5vh;
+    margin-right: 2vh;
+  }
+  .campDay2 {
+    height: 4vh;
+  }
+}
+
+#lineUpTitle {
+  border-bottom: 10px;
+}
+
+// .myBox{
+//   background-color: #C6C6C6;
+//   align-content: center;
+//   text-align: center;
+//   position: relative;
+//   width: 150vh;
+// }
+table {
+  width: 120vh;
+  left: 10vh;
+  align-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.stageColorM {
+  height: 4vh;
+  text-align: center;
+  padding-top: -1vh;
+  font-size: 24px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+.stageColor {
+  background-color: #c6c6c6;
+  height: 4vh;
+  text-align: center;
+  padding-top: -1vh;
+  font-size: 24px;
+  border-radius: 4px;
+}
+
+.displayNone {
+  display: none;
+}
+
+.timeTitle {
+  background-color: #c6c6c6;
+  position: relative;
+  height: 4vh;
+  top: 1.3vh;
+  width: 6vh;
+  font-size: 1.2em;
+  border-radius: 4px;
+  // font-weight: 1000;
+  // margin-bottom: 2vh;
+}
+b {
+  position: relative;
+  top: -0.6vh;
+  right:0.1;
+}
+
+
+#cantSee {
+  visibility: hidden;
+}
+.inTableTime {
+  font-size: 1.5vh;
+}
+
+.hrefColor {
+color: black;
+  font-size: 0.9em;
+  // box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 5px;
+  border: 1px solid black;
+  // background-color: #555454;
+  padding: 5px;
+  margin-top: 0.6vh;
+  width: 15vh;
+  font-weight: 600; 
+}
+
+// .switchDN{
+//   hadFunfunction
+// }
+
+.iAmHere {
+  width: 10vw;
+  margin-left: 28vw;
+  margin-top: 6vh;
+  // background-color: khaki;
+  align-content: center;
+  .hereBtn {
+    position: relative;
+    width: 25vh;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    background-color: #fff;
+    border: 1px solid black;
+  }
+  .fontAwe{
+    color: #555454;
+  }
+  
+}
+.hereBtn:hover{
+  border:1px solid rgb(19, 19, 19);
+  position: relative;
+  bottom: 2px;
+  background-color: #555454;
+  .fontAwe{
+    color: white;
+  }
+  
+}
+.hereBtn2:hover{
+  border:1px solid rgb(19, 19, 19);
+  position: relative;
+  bottom: 2px;
+  background-color: #555454;
+  .fontAwe{
+    color: white;
+  }
+  
+}
+// .thisTest{
+//   background-color: steelblue;
+// }
+
+.iAmHere2 {
+  width: 10vw;
+  margin-left: 28vw;
+  margin-top: 6vh;
+  // padding-left: 47vh;
+  // padding-top: 4.5vh;
+  // background-color: #f0e68c;
+  align-content: center;
+  .hereBtn2 {
+    border:1px solid rgb(19, 19, 19);
+    position: relative;
+    width: 25vh;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    // background-color: lavenderblush;
+   
+  }
+}
+
+tr {
+  height: 7vh;
+  width: 70vw;
+  margin-bottom: 5px;
+  
+  th {
+    margin-top: 1vh;
+  
+  }
+}
+
+.bgc {
+  position: relative;
+}
+
+.bgc::after {
+  //for most of all
+  position: relative;
+  background-color: #d8d8d8;
+  border-radius: 10px;
+  height: 105%;
+  width: 56vw;
+  top: -6.74vh;
+  z-index: -1;
+  content: "";
+}
+
+.spec2 {
+  position: relative;
+  // background-color: antiquewhite;
+}
+.spec2::after {
+  //for chilli peppers
+  position: relative;
+  // background-color: #f0f0f0;
+  background-color: #d8d8d8;
+  width: 56vw;
+  height: 107%;
+  content: "";
+  border-radius: 10px;
+  top: -8.2vh;
+  z-index: -1;
+  
+}
+
+// .useborder::after{
+//   position: relative;
+//   left: -18vh;
+//   top: 0.5vh;
+//   width: 200px;
+//   height: 40px;
+//   z-index: 1;
+//   content: '';
+//   box-shadow: rgba(0,0,0,0.09) 0px 2px 1px , rgba(0,0,0,0.09)0px 4px 2px, rgba(0,0,0,0.09)0px 16px 8px , rgba(0,0,0,0.09)0px 32px 16px;
+//   border: 1px solid rgb(175, 174, 179);
+//   border-radius: 5px;
+//   // background-color: #C6C6C6;
+//   opacity: 90%;
+//   // background-color: aquamarine;
+
+// }
+
+//////////////////////////////////////////////////
+.heart {
+  padding: 2vh;
+  font-size: 1em;
+  margin-left: 5px;
+  position: relative;
+  &:hover {
+    color: rgb(240, 87, 87);
+    cursor: pointer;
+  }
+}
+.addLoved {
+  display: none;
+}
+.loved {
+  font-size: 1em;
+  margin-left: 5px;
+  color: rgb(240, 87, 87);
+  cursor: pointer;
+  visibility: hidden;
+  position: relative;
+}
+
+.forChilli{
+  .hrefColor{
+    margin-top: -0.5vh;
+  }
+}
+//allin Allin
+}

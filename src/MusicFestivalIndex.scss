@@ -1,0 +1,12 @@
+.music_festival_container {
+    //   background-color: #fffbd0;
+    //   transition: 0.5s;
+    width:100%;
+    // height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    &.music_festival_container_dark {
+      // background-color: #333;
+    }
+}
+  

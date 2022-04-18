@@ -1,0 +1,45 @@
+.ticket_order_container {
+  max-width: 100%;
+  height: calc(100vh - 170px);
+  // height: 70vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  font-family: "Noto Sans TC", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  &.ticket_order_container_step_one{
+  // height: 108vh;
+
+  }
+  .test_area {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    > input {
+      margin-left: 20px;
+    }
+  }
+  .ticket_order_title {
+    display: flex;
+    justify-content: center;
+    width: 15%;
+    height: 75px;
+    position: absolute;
+    top: 7%;
+    left: 5%;
+    background-image: url("./../../image/ticket_morning.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    //   margin-top: 90px;
+  }
+
+  @media (max-width: 1050px) {
+    .modal_container.component_show  {
+      .modal_inner.modal_show {
+        transform: scale(0.65);
+      }
+    }
+  }
+}

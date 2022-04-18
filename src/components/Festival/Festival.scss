@@ -1,0 +1,111 @@
+.navbar_container {
+  width: 100%;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #ebebeb;
+  .navbar_inner {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    width: 1440px;
+    background-color: rgb(236, 236, 236);
+    transition: 0.3s;
+    &.navbar_inner_dark {
+      background-color: #333;
+    }
+    .main_logo_area {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      padding: 0 20px;
+      .main_logo {
+        background-image: url("../../../image/logo.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: 200px;
+        height: 50px;
+        transition: 0.3s;
+        &.main_logo_dark {
+          filter: invert(1);
+        }
+      }
+    }
+    .menu_item_area {
+      display: flex;
+      align-items: center;
+      &.menu_item_dark {
+        .nav_item {
+          color: #c7c7c7;
+        }
+      }
+      .nav_item {
+        width: 100px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+    .func_area {
+      display: flex;
+      align-items: center;
+      width: 240px;
+      .icon {
+        width: 30px;
+        height: 30px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        margin-right: 15px;
+        cursor: pointer;
+        &.icon_cart {
+          background-image: url("https://photographycourse.net/wp-content/uploads/2010/07/CCD-Digital-camera-sensor-1.jpg");
+        }
+        &.icon_user {
+          background-image: url("https://photographycourse.net/wp-content/uploads/2010/07/CCD-Digital-camera-sensor-1.jpg");
+        }
+      }
+      .switch_toggle {
+        width: 60px;
+        margin-right: 15px;
+        cursor: pointer;
+        .switch_toggle_inner {
+          width: 46px;
+          height: 26px;
+          border-radius: 20px;
+          background-color: #333;
+          position: relative;
+          &.switch_toggle_inner_dark {
+            background-color: #c7c7c7;
+          }
+          .round {
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            transition: 0.3s;
+            background-color: #c7c7c7;
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            &.round_dark {
+              background-color: #333;
+              transform: translateX(20px);
+            }
+          }
+        }
+      }
+    }
+  }
+}

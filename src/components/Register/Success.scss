@@ -1,0 +1,33 @@
+$colorGreen: #81c268;
+.success{
+    max-width: 1920px;
+    min-height: calc(100vh - 200px);
+    width: 100%;
+    height: 600px;
+    background-image: url("./../../image/vs_morning.svg");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .success_box{
+        width: 400px;
+        height: 400px;
+        background-color: #fff;
+        border-radius: 40px;
+        box-shadow: 3px 3px 5px rgb(48, 45, 45);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .my_icon{
+            color: $colorGreen;
+            width: 50%;
+            height: 50%;
+            margin-bottom: 30px;
+
+            // background-color: #fff;
+        }
+    }
+}

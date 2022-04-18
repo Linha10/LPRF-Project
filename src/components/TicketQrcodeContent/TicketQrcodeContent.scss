@@ -1,0 +1,185 @@
+.user_panel_content_container {
+  width: 428px;
+  // height: 360px;
+  border-radius: 5px;
+  overflow: hidden;
+  .user_panel_content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+    // padding: 20px 20px;
+    // background-color: #333;
+    &.user_panel_content_dark {
+      background-color: #333;
+    }
+    .close_btn {
+      width: 16px;
+      height: 16px;
+      background-image: url("./../../image/close.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      cursor: pointer;
+    }
+    > svg {
+      filter: blur(1px);
+    }
+    .qr_cord_area {
+      width: 100%;
+      height: 257px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .qr_cord {
+        width: 200px;
+        height: 200px;
+        display: flex;
+      }
+    }
+    .ticket_background {
+      width: 100%;
+      height: 655px;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      .ticket_container {
+        display: block;
+        width: 410px;
+        height: 604px;
+        position: relative;
+        .lightbox_change{
+          display: flex;
+          align-items: center;
+        
+        }
+        .ticket {
+          width: 410px;
+          height: 590px;
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          position: relative;
+          &.ticket_one {
+            background-image: url(./../../image/1dayticket_NN.png);
+          }
+          &.ticket_two {
+            background-image: url(./../../image/2dayticket_NN.png);
+          }
+          &.ticket_camp {
+            background-image: url(./../../image/campticket_NN.png);
+          }
+          .ticket_number_normal{
+            color:white;
+            position: absolute;
+            font-weight: 600;
+            bottom: 69px;
+            left: 175px;
+            font-size: 17px;
+            letter-spacing: 2px;
+            &.ticket_days_number_normal{
+              color:black;
+            }
+          }
+          .ticket_number_reverse{
+            color: #404068;
+            writing-mode: vertical-lr;
+            // font-family: Ailerons-Regular;
+            position: absolute;
+            font-weight: 600;
+            left: 86px;
+            bottom: 125px;
+            letter-spacing: 2px;
+            font-size: 17px;
+            &.ticket_days_number_reverse{
+              color: black;
+
+            }
+          }
+          .ticket_number_stalic{
+            color:#404068;
+            position: absolute;
+            right: 60px;
+            bottom: 59px;
+            letter-spacing: 2px;
+            font-weight: 600;
+            transform: rotateZ(-45deg);
+            font-size: 13px;
+            &.ticket_days_number_stalic{
+              color:white;
+            }
+
+          }
+          .left_arrow{
+            background-image: url("./../../image/lightbox_arrow_left_solid.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position-y: bottom;
+            width: 26px;
+            height: 100px;
+            margin: 1px;
+            opacity: 0.2;
+            position: absolute;
+            left: 0px;
+            cursor: pointer;
+            &:hover{
+              transition: 0.3s;
+              opacity: 0.4;
+            }
+          }  
+          .right_arrow{
+            background-image: url("./../../image/lightbox_arrow_right_solid.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position-y: bottom;
+            position: absolute;
+            right: 0px;
+            width: 26px;
+            height: 100px;
+            margin: 0px;
+            opacity: 0.2;
+            cursor: pointer;
+            &:hover{
+              transition: 0.3s;
+              opacity: 0.4;
+            }
+
+          }    
+        }
+        
+      }
+      .text_area {
+        color: white;
+        font-size: 12px;
+        line-height: 16px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: "Noto Sans TC", sans-serif;
+        letter-spacing: 2px;
+        position: absolute;
+        bottom: -10px;
+
+        .text_A {
+          text-align: left;
+          width: 323px;
+        }
+        .text_B {
+          text-align: left;
+          width: 323px;
+        }
+      }
+    }
+  }
+}

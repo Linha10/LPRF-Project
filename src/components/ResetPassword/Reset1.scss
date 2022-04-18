@@ -1,0 +1,94 @@
+.reset1_container {
+    max-width: 1920px;
+    min-height: calc(100vh - 200px);
+    width: 100%;
+    height: 500px;
+    background-image: url("./../../image/vs_morning.svg");
+    // background-position: 0 100px;
+    background-repeat: no-repeat;
+    padding-bottom: 40px;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-position-y: 40px;
+    font-size: 20px;
+
+    .now_location {
+        margin-top: 30px;
+        padding-top: 50px;
+        text-align: center;
+
+        span {
+            display: inline-block;
+            margin: 10px;
+        }
+    }
+    .reset_all {
+        
+        width: 500px;
+        height: 480px;
+        margin: 30px auto;
+        margin-top: 70px;
+        text-align: center;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.95);
+        border-radius: 25px;
+        .reset_password {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            .reset_step {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+
+                .reset_circle {
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                    border: 1px solid #000000;
+                    margin: 10px;
+                    margin-top: 20px;
+                    line-height: 30px;
+                }
+                & .reset_circle:first-child {
+                    background-color: #81c268;
+                }
+                .reset_line {
+                    width: 30px;
+                    height: 15px;
+                    border-bottom: 1px solid black;
+                    margin: 10px;
+                    margin-top: 20px;
+
+                }
+            }
+
+            .reset_insert {
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+                margin: 40px auto;
+
+                div {
+                    margin-left: 10px;
+                    text-align: left;
+                }
+                #insert_email {
+                    margin: 10px;
+                    height: 35px;
+                }
+                button {
+                    color: #fff;
+                    background-color: #81c268;
+                    border: none;
+                    margin: 10px;
+                    height: 35px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

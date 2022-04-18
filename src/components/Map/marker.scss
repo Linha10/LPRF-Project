@@ -1,0 +1,51 @@
+.theMarkerCon{
+
+.markerSetting {
+    position: relative;
+    width: 15%;
+    z-index: 23;
+    opacity: 0;
+    transition: 0.5s;
+    // filter: drop-shadow(1px 2px 2px rgb(12, 12, 12));
+}
+.markerSetting:hover {
+    opacity: 1;
+    /*  */
+}
+
+.camp1Marker {
+    top: -44vh;
+    left: 22vh;
+    z-index: 25;
+    // background-color: rgb(221, 129, 129);
+}
+.camp2Marker {
+    top: -48vh;
+    left: -1vh;
+}
+
+.camp3Marker {
+    top: -35vh;
+    left: -24vh;
+}
+
+.camp4Marker {
+    top: -35vh;
+    left: -3vh;
+}
+
+.camp5Marker {
+    top: -34vh;
+    left: -1vh
+}
+
+.camp6Marker {
+    top: -27vh;
+    right: 30vh;
+}
+.camp7Marker {
+    right: -25vh;
+    top: -37vh;
+}
+//All in theMarkerCon
+}
