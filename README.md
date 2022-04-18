@@ -1,3 +1,13 @@
+## 資策會結訓專題網頁: Love & PEACE Rock Festival
+以音樂祭為主題開發的網頁
+使用時下流行的三大框架中的React作為主要開發框架
+網頁內容除了首頁及活動簡易介紹外，還有不輸市面上網頁的豐富度:
+有活動時程表、交通及活動地圖頁、購票頁、紀念品商店頁、會員登入(支援第三方google登入)、會員專區
+以及管理後台（還未收錄）
+
+會員相關及部分購票系統與商店頁都以流行的RESTful api做撰寫
+再使用Axios方法做DB資料的抓取
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
