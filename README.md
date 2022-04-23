@@ -7,7 +7,7 @@
 
 會員相關及部分購票系統與商店頁都以流行的RESTful api做撰寫
 再使用Axios方法做DB資料的抓取
-## 部分功能需要database配合才能使用
+## 部分功能需要使用node.js跑database配合才能使用
 如有需要請email :yahaa1010@gmail.com
 
 # Getting Started with Create React App
